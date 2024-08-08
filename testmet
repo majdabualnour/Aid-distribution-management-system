@@ -1,0 +1,44 @@
+import sqlite3
+from datetime import date
+
+# Function to create/connect to the database
+def connect_to_db():
+    conn = sqlite3.connect('supermarket.db')
+    return conn
+
+# Function to create tables
+def create_tables(conn):
+    c = conn.cursor()
+
+    # Table for products data
+    c.execute('''CREATE TABLE IF NOT EXISTS thedone (
+                id INTEGER PRIMARY KEY,
+                date TEXT,
+                price INTEGER
+      
+
+                )''')
+
+
+    conn.commit()
+def adddone(conn, username, name,  password, img):
+   c = conn.cursor()
+   c.execute('''INSERT INTO thedone (date , price)
+               VALUES (?, ?)''', (date, name)) 
+from datetime import date
+def getdone(conn , bar):
+    try:
+        c = conn.cursor()
+        today = date.today()
+        c.execute('''SELECT price FROM thedone WHERE date=?''', (bar,))
+        total_price = c.fetchone()[0]
+        return total_price 
+    except:
+        date = date.today()
+        add_seller(conn , date , 0)
+        c = conn.cursor()
+        today = date.today()
+        c.execute('''SELECT price FROM thedone WHERE date=?''', (bar,))
+        total_price = c.fetchone()[0]
+        return total_price 
+
