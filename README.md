@@ -1,12 +1,12 @@
 # Aid-distribution-management-system
 
-![Project Logo](images/logo.png)
+
 
 ## Overview
 
 This project is a web application built with Flask that interacts with an Excel file and an SQLite database. The application performs various tasks such as reading data from the Excel file, updating the database, and managing user sessions.
 
-![Overview Diagram](images/overview.png)
+![Overview Diagram](dashboard.png)
 
 ## Features
 
@@ -19,22 +19,23 @@ This project is a web application built with Flask that interacts with an Excel 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/yourproject.git
+    git clone https://github.com/majdabualnour/Aid-distribution-management-system
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd yourproject
+    cd Aid-distribution-management-system
     ```
 
 3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+- Python 3.x
+- Flask
+- SQLite3
+- `openpyxl` library for handling Excel files
 
 4. Run the application:
     ```bash
-    python app.py
+    python __init__.py
     ```
 
 ## Usage
@@ -55,9 +56,9 @@ This project is a web application built with Flask that interacts with an Excel 
 
 Here are some example screenshots of the application in action:
 
-![Login Page](images/login.png)
+![Login Page](login.png)
 
-![Dashboard](images/dashboard.png)
+![Dashboard](dashboard.png)
 
 ## Contributing
 
@@ -78,6 +79,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any questions or suggestions, please contact:
 
-- **Your Name** - your.email@example.com
+- **Majd Abualnour** - majdapoalnoor@gmail.com
 
-![Footer Image](images/footer.png)
+
