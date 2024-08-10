@@ -60,6 +60,8 @@ Here are some example screenshots of the application in action:
 
 ![Dashboard](dashboard.png)
 
+![Printed Paper](paper.png)
+
 ## Contributing
 
 If you want to contribute to this project, please follow these steps:
